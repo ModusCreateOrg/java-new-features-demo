@@ -16,15 +16,6 @@
     <maven.compiler.target>15</maven.compiler.target>
   </properties>
 
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.11</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
-
   <build>
     <pluginManagement>
       <plugins> 
@@ -39,5 +30,16 @@
         </plugin>
       </plugins>
     </pluginManagement>
+      <plugins>
+          <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-compiler-plugin</artifactId>
+              <configuration>
+                  <source>14</source>
+                  <target>14</target>
+                  <compilerArgs>--enable-preview</compilerArgs>
+              </configuration>
+          </plugin>
+      </plugins>
   </build>
 </project>

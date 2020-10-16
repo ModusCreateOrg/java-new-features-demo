@@ -55,15 +55,3 @@ final class Circle {
     }
 
 }
-
-
-
-public class SealedClassExample {
-
-    public static void main(String[] args) {
-
-
-
-    }
-
-}
